@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'Gyparody HV';
+    src: url(gyparody-hv.ttf);
+}
+
+@font-face {
+    font-family: 'Gyparody RG';
+    src: url(gyparody-rg.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #2a3698;
+    color: #ebbe00;
+    text-align: center;
+    line-height: 1.6;
+    font-family: 'Gyparody RG', sans-serif;
+    font-size: 1rem;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: repeat(5, 20%);
+    height: 100vh;
+}
+
+.board * {
+    border: 0.1rem solid #252525;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.my-category-title {
+    font-family: 'Gyparody HV', sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    color: #f2f2f2;
+    grid-row-start: 1;
+    text-transform: uppercase;
+}
+
+.my-category-clue {
+    font-size: 2rem;
+}
